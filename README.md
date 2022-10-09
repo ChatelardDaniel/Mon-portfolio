@@ -7,7 +7,7 @@
 - HTML CSS Support.
 - Live Server.
 
-## 2 Création
+## 2 Créer
 
 - Un fichier index.html.
 - Un dossier img.
