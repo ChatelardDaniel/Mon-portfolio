@@ -15,11 +15,36 @@ body {
     font-size: 1.6rem;
     color: #555555;
     margin: 0;
-    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+h1,
+.h1 {
+    font-size: 3.1rem;
+}
+
+h2,
+.h2 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+
+h3,
+.h3 {
+    font-size: 2.1rem;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .list-unstyled {
@@ -38,6 +63,16 @@ a {
     justify-content: space-between;
 }
 
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.grid__item {
+    width: 100%;
+}
+
 @media screen and (min-width:750px) {    
     .container {
         max-width:1200px;
@@ -48,6 +83,15 @@ a {
 
 
 /* Sections */
+
+section {
+    padding: 5.5rem 0;
+}
+
+.section-title {
+    margin-top: 0;
+    font-size: 3.8rem;
+}
 
 .header {
     
@@ -145,3 +189,59 @@ a {
     }
     
 }
+
+/* Début Partie hero */
+
+.hero {
+    background: #5b6c78;
+    color: #fff;
+    padding: 1rem 0 0 0;
+}
+
+.hero .title {
+    color: inherit;
+    font-size: 4rem;
+    margin: 1.5rem 0 0 0;
+}
+
+.hero__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__item span {
+    text-transform: uppercase;
+}
+
+/* Début pour les petits écrans */
+@media screen and (max-width:749px) {
+    .hero__item.left {
+        order: 2;
+    }
+    
+    .hero__item.right {
+        order: 1;
+    }
+}
+/* Fin pour les petits écrans */
+
+
+@media screen and (min-width:750px) { 
+    .hero__item {
+        flex: 1 0 50%;
+        align-items: start;
+        text-align: left;
+    }
+    .hero .title {
+        font-size: 5rem;
+    }
+
+    .hero__avatar img {
+        max-width: 400px;
+        border-radius: 50%;
+    }
+}
+/* Fin Partie hero */
